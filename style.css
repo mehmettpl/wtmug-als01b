@@ -60,6 +60,58 @@ button {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    background: white; /* Varsayılan arka plan beyaz */
+    margin-bottom: 10px;
+    padding: 14px;
+    border-radius: 8px;
+    transition: background 0.3s ease; /* Renk geçişi yumuşak olsun */
+}
+
+/* Tamamlanan görevin arka plan rengi */
+.task.completed {
+    background: #d1fae5; /* Açık yeşil */
+    /* İsterseniz metnin rengini de değiştirebilirsiniz: */
+    /* color: #065f46; */
+}
+
+.button-group {
+    display: flex;
+    gap: 8px;
+}
+
+.complete-button {
+    background: #10b981;
+    color: white;
+}
+
+.delete-button {
+    background: #ef4444;
+    color: white;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addButton {
+    background: #2563eb;
+    color: white;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
     background: white;
     margin-bottom: 10px;
     padding: 14px;
